@@ -1,32 +1,73 @@
-# Qualidade de Dados Cadastrais
+# 📊 Qualidade de Dados Cadastrais
 
-Projeto desenvolvido com o objetivo de analisar e melhorar a qualidade de uma base fictícia de dados cadastrais de produtos, clientes e fornecedores.
+Projeto desenvolvido para aplicar conceitos de análise, tratamento, padronização e qualidade de dados utilizando Microsoft Excel.
 
-## Objetivo
+## 🎯 Objetivo
 
-Identificar problemas comuns em bases cadastrais, como:
+Analisar uma base fictícia de produtos, clientes e fornecedores, identificar inconsistências cadastrais e realizar o tratamento dos dados, buscando melhorar sua padronização, completude e qualidade.
+
+O projeto foi inspirado na minha experiência profissional com cadastro e validação de informações e faz parte do meu processo de desenvolvimento e transição para as áreas de Tecnologia e Análise de Dados.
+
+## 🔎 Análises realizadas
+
+Durante a análise foram identificados problemas relacionados a:
 
 - Registros duplicados
 - Campos vazios
-- Informações inconsistentes
 - Falta de padronização
-- Dados cadastrais incompletos
+- Formatos inválidos
+- Valores inválidos
+- Dados inconsistentes
 
-## Contexto
+## 🛠️ Tratamento realizado
 
-Este projeto foi inspirado na minha experiência profissional com cadastro e validação de informações de produtos, clientes e fornecedores.
+Foram aplicadas técnicas de tratamento e qualidade de dados, incluindo:
 
-Todos os dados utilizados neste projeto são fictícios e foram criados exclusivamente para fins de estudo e desenvolvimento profissional.
+- Identificação e remoção de duplicidades
+- Padronização de informações cadastrais
+- Identificação de dados ausentes
+- Validação de formatos
+- Identificação de valores inconsistentes
+- Padronização de textos
+- Uso de fórmulas e recursos do Excel
+- Criação de indicadores de qualidade
 
-## Ferramentas
+## 📈 Resultados
+
+Foram analisados **42 registros** distribuídos entre produtos, clientes e fornecedores.
+
+Durante a análise foram identificadas **37 ocorrências de inconsistências**, classificadas em:
+
+- 3 duplicidades
+- 10 campos vazios
+- 18 problemas de padronização
+- 2 formatos inválidos
+- 3 valores inválidos
+- 1 valor inconsistente
+
+> Uma mesma linha cadastral pode apresentar mais de uma inconsistência. Portanto, o número de ocorrências não representa a quantidade de registros incorretos.
+
+## 💻 Ferramentas utilizadas
 
 - Microsoft Excel
-- Python (em desenvolvimento)
+- Formatação Condicional
+- Localizar e Substituir
+- Fórmulas de tratamento de texto
+- SOMASE
+- Indicadores de qualidade
+- Gráficos
 
-## Análises realizadas
+## 📂 Arquivos do projeto
 
-O projeto irá contemplar a identificação de inconsistências, tratamento e padronização dos dados, comparação entre a base original e a base tratada e análise da qualidade das informações.
+- `base_cadastral_original.xlsx` — base fictícia antes do tratamento
+- `base_cadastral_tratada.xlsx` — base após análise, padronização e tratamento
 
-## Desenvolvimento
+## 🚀 Próximos passos
 
-Este projeto faz parte do meu processo de desenvolvimento profissional e transição para as áreas de Tecnologia e Análise de Dados.
+Como evolução do projeto, pretendo reproduzir parte do processo de análise e tratamento utilizando Python, ampliando meus conhecimentos em automação e manipulação de dados.
+
+## 👩‍💻 Sobre o projeto
+
+Este projeto faz parte do meu portfólio de estudos e desenvolvimento profissional em Tecnologia e Análise de Dados, conectando conhecimentos técnicos à minha experiência anterior com processos, cadastro e análise de informações.
+
+Todos os dados utilizados são fictícios e foram criados exclusivamente para fins de estudo.
