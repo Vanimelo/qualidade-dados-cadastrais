@@ -1,73 +1,104 @@
 # 📊 Qualidade de Dados Cadastrais
 
-Projeto desenvolvido para aplicar conceitos de análise, tratamento, padronização e qualidade de dados utilizando Microsoft Excel.
+Projeto desenvolvido para aplicar conceitos de análise, tratamento, padronização e qualidade de dados utilizando **Microsoft Excel e Python**.
+
+A base utilizada contém dados fictícios de **produtos, clientes e fornecedores**, com inconsistências inseridas para simular problemas encontrados em bases cadastrais reais.
 
 ## 🎯 Objetivo
 
-Analisar uma base fictícia de produtos, clientes e fornecedores, identificar inconsistências cadastrais e realizar o tratamento dos dados, buscando melhorar sua padronização, completude e qualidade.
+Identificar, analisar e tratar problemas de qualidade de dados que podem impactar relatórios, indicadores, integrações entre sistemas e processos de negócio.
 
-O projeto foi inspirado na minha experiência profissional com cadastro e validação de informações e faz parte do meu processo de desenvolvimento e transição para as áreas de Tecnologia e Análise de Dados.
+O projeto também utiliza Python para automatizar parte das validações realizadas inicialmente no Excel.
 
-## 🔎 Análises realizadas
+## 🔎 Análise realizada
 
-Durante a análise foram identificados problemas relacionados a:
+Foram analisados **42 registros** distribuídos entre as bases de:
+
+- Produtos
+- Clientes
+- Fornecedores
+
+Durante a análise foram identificadas **37 inconsistências**.
+
+| Tipo de inconsistência | Quantidade |
+|---|---:|
+| Duplicidades | 3 |
+| Campos vazios | 10 |
+| Falta de padronização | 18 |
+| Formatos inválidos | 2 |
+| Valores inválidos | 3 |
+| Valores inconsistentes | 1 |
+| **Total** | **37** |
+
+## ⚠️ Problemas encontrados
+
+Entre os problemas identificados estavam:
 
 - Registros duplicados
+- Campos obrigatórios sem preenchimento
+- IDs fora do padrão
+- Categorias e status escritos de formas diferentes
+- CPF fora do padrão definido
+- Telefones sem padronização ou com valores inválidos
+- E-mails com formato inválido
+- UF preenchida incorretamente
+- Valores de preço negativos
+- Diferenças de maiúsculas, minúsculas e acentuação
+
+## 🧹 Tratamento dos dados
+
+Após a análise, foi criada uma versão tratada da base.
+
+As principais ações realizadas foram:
+
+- Remoção de registros duplicados
+- Padronização de textos
+- Correção de IDs
+- Padronização de categorias e status
+- Padronização de UF, cidade, CPF, telefone e e-mail
+- Identificação de campos vazios para validação
+- Identificação e correção de valores inválidos ou inconsistentes
+
+## 🐍 Automação com Python
+
+Após a análise no Excel, foi desenvolvido um script em Python utilizando a biblioteca **pandas**.
+
+O script realiza automaticamente verificações de:
+
+- Duplicidades
 - Campos vazios
 - Falta de padronização
-- Formatos invalidos
-- Valores invalidos
-- Dados inconsistentes
+- Formatos inválidos
+- Valores inválidos
+- Valores inconsistentes
 
-## 🛠️ Tratamento realizado
+O resultado da análise automatizada confirmou:
 
-Foram aplicadas técnicas de tratamento e qualidade de dados, incluindo:
+- **42 registros analisados**
+- **37 inconsistências identificadas**
 
-- Identificação e remoção de duplicidades
-- Padronização de informações cadastrais
-- Identificação de dados ausentes
-- Validação de formatos
-- Identificação de valores inconsistentes
-- Padronização de textos
-- Uso de fórmulas e recursos do Excel
-- Criação de indicadores de qualidade
+## 📈 Indicadores de qualidade
 
-## 📈 Resultados
+Foi criada uma área de análise no Excel para consolidar os principais indicadores de qualidade dos dados e facilitar a visualização das inconsistências encontradas.
 
-Foram analisados **42 registros** distribuídos entre produtos, clientes e fornecedores.
+Também foi criado um gráfico para apresentar a distribuição dos problemas identificados na base cadastral.
 
-Durante a análise foram identificadas **37 ocorrências de inconsistências**, classificadas em:
-
-- 3 duplicidades
-- 10 campos vazios
-- 18 problemas de padronização
-- 2 formatos invalidos
-- 3 valores invalidos
-- 1 valor inconsistente
-
-> Uma mesma linha cadastral pode apresentar mais de uma inconsistência. Portanto, o número de ocorrências não representa a quantidade de registros incorretos.
-
-## 💻 Ferramentas utilizadas
+## 🛠️ Tecnologias utilizadas
 
 - Microsoft Excel
-- Formatação Condicional
-- Localizar e Substituir
-- Fórmulas de tratamento de texto
-- SOMASE
-- Indicadores de qualidade
-- Gráficos
+- Python
+- pandas
+- openpyxl
+- Google Colab
+- GitHub
 
-## 📂 Arquivos do projeto
+## 📁 Estrutura do projeto
 
-- `base_cadastral_original.xlsx` — base fictícia antes do tratamento
-- `base_cadastral_tratada.xlsx` — base após análise, padronização e tratamento
-
-## 🚀 Próximos passos
-
-Como evolução do projeto, pretendo reproduzir parte do processo de análise e tratamento utilizando Python, ampliando meus conhecimentos em automação e manipulação de dados.
-
-## 👩‍💻 Sobre o projeto
-
-Este projeto faz parte do meu portfólio de estudos e desenvolvimento profissional em Tecnologia e Análise de Dados, conectando conhecimentos técnicos à minha experiência anterior com processos, cadastro e análise de informações.
-
-Todos os dados utilizados são fictícios e foram criados exclusivamente para fins de estudo.
+```text
+qualidade-dados-cadastrais/
+│
+├── README.md
+├── analise_qualidade.py
+├── base_cadastral_original.xlsx
+├── base_cadastral_tratada.xlsx
+└── requirements.txt
