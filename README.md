@@ -15,8 +15,8 @@ Durante a análise foram identificados problemas relacionados a:
 - Registros duplicados
 - Campos vazios
 - Falta de padronização
-- Formatos inválidos
-- Valores inválidos
+- Formatos invalidos
+- Valores invalidos
 - Dados inconsistentes
 
 ## 🛠️ Tratamento realizado
@@ -41,8 +41,8 @@ Durante a análise foram identificadas **37 ocorrências de inconsistências**, 
 - 3 duplicidades
 - 10 campos vazios
 - 18 problemas de padronização
-- 2 formatos inválidos
-- 3 valores inválidos
+- 2 formatos invalidos
+- 3 valores invalidos
 - 1 valor inconsistente
 
 > Uma mesma linha cadastral pode apresentar mais de uma inconsistência. Portanto, o número de ocorrências não representa a quantidade de registros incorretos.
